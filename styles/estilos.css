@@ -1,3 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+@font-face {
+    font-family: "Anicon Sans";
+    src: url('../fonts/AniconSans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mistrully";
+    src: url('../fonts/Mistrully-Ojmd.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Virtual";
+    src: url('../fonts/Virtual-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 body{
     background-color: #EDE5D9;
+    display: grid;
+    place-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width:767px) {
+
+/* Seccion de historia */
+
+.historia{
+    width: 100%; 
+    display: grid;
+    gap: 20px;
+    place-items: center;  
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+}
+.historia-imagenes{
+    width: 100%;
+    display: flex;
+    gap:20px;
+}
+.historia-imagenes #img1{
+    margin-left: 10px;
+    height: 280px;
+    background: #5cb85c;
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 1000px 0px 0px 1000px;    
+}
+.historia-imagenes #img2{
+    margin-right: 10px;
+    margin-top: 50px;
+    height: 280px;
+    background: #5cb85c;
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0px 1000px 1000px 0px;
+}
+.historia-texto{
+    font-size: 17px;
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    gap: 15px;
+
+}
+
+/* Seccion del contador */
+
+#cuenta {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simply-section {
+    width: 90px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.simply-amount {
+
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+}
+
+.simply-word {
+
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.cuenta-regresiva{
+    width: 95%;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+    border-radius: 11px 11px 11px 11px;
+    padding: 20px;
+}
+
+/* Seccion para modificar textos */
+
+.titulos-principales{
+    margin: 50px;
+}
+.titulos{
+    margin-top: 30px;
+}
+
+/* Aqui va el css del itinerario */
+
+.itinerario{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+}
+
+.itinerario img{
+    height: 155px;
+}
+.card{
+    min-height: 400px;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+    border-radius: 11px 11px 11px 11px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    width: 230px;
+    background-color: white;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+.llegar{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.llegar img{
+    height: 100%;
+}
+
+/* Aqui el css del dress code */
+
+.mujeres img{
+    height: 100%;
+}
+
+/* Aqui el css de la galeria */
+
+.galeria{
+    display: grid;
+    place-items: center;
+    gap: 25px;
+}
+
+
+#busqueda{
+    border-radius: 16px 16px 16px 16px;
+    -moz-border-radius: 16px 16px 16px 16px;
+    -webkit-border-radius: 16px 16px 16px 16px;
+}
 }
