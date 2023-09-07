@@ -47,6 +47,8 @@ body{
 .historia{
     width: 100%; 
     display: grid;
+    padding-top: 20px;
+    padding-bottom: 30px;
     gap: 20px;
     place-items: center;  
     -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
@@ -119,6 +121,7 @@ body{
 }
 
 .cuenta-regresiva{
+    background-color: #E6DCCC;
     width: 95%;
     height: 250px;
     display: grid;
@@ -131,28 +134,20 @@ body{
     padding: 20px;
 }
 
-/* Seccion para modificar textos */
+/* Seccion para modificar textos y clases generales */
 
 .titulos-principales{
     margin: 50px;
+    margin-top: 70px;
 }
-.titulos{
-    margin-top: 30px;
-}
-
-/* Aqui va el css del itinerario */
-
-.itinerario{
+.main-containers{
     width: 100%;
     display: grid;
     place-items: center;
     gap: 30px;
 }
-
-.itinerario img{
-    height: 155px;
-}
 .card{
+    background-color: #E6DCCC;
     min-height: 400px;
     width: 90%;
     display: grid;
@@ -167,6 +162,16 @@ body{
     padding-bottom: 20px;
     margin-top: 40px;
 }
+.titulos{
+    margin-top: 30px;
+}
+
+/* Aqui va el css del itinerario */
+
+.imgc{
+    height: 155px;
+}
+
 .imagen{
     display: flex;
     justify-content: center;
@@ -192,19 +197,77 @@ body{
 .mujeres img{
     height: 100%;
 }
+#dress{
+    padding-bottom: 70px;
+}
 
 /* Aqui el css de la galeria */
 
-.galeria{
-    display: grid;
-    place-items: center;
-    gap: 25px;
+.main-containers h2{
+    opacity: 0.5;
 }
-
 
 #busqueda{
     border-radius: 16px 16px 16px 16px;
     -moz-border-radius: 16px 16px 16px 16px;
     -webkit-border-radius: 16px 16px 16px 16px;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.elemento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin: 0 5px;
+    width: 400px;
+    height: 600px;
+    padding: 10px;
+}
+.elemento img{
+    height: 100%;
+}
+
+/* Aqui va el css de la musica */
+
+#boton{
+    font-family: Arial;
+    color: black;
+    font-size: 22px;
+    padding: 9px;
+    border: none;
+    text-decoration: none;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    background-color: #a55b278a;
+}
+
+/* Aqui va el css del footer */
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+footer .contactos{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+footer button{
+    height: 34px;
+    width: 130px;
 }
 }
