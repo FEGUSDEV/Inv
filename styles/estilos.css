@@ -51,9 +51,13 @@ header{
     height: 700px;
     width: 100%;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 video{
-    width: 100%;
+    width: 95%;
+    border: none;
 }
 
 /* Seccion de historia */
@@ -339,7 +343,7 @@ footer{
 footer .contactos{
     width: 100%;
     display: flex;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
 }
