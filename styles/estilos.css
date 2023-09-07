@@ -157,7 +157,8 @@ video{
 
 .titulos-principales{
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    font-size: 40px;
 }
 .main-containers{
     width: 100%;
@@ -183,6 +184,47 @@ video{
 }
 .titulos{
     margin-top: 30px;
+    font-size: 50px;
+}
+.textocard{
+    text-align: center;
+    width: 300px;
+    font-size: 18px;
+}
+
+p{
+    color: #545454;
+    font-family: 'Anicon Sans';
+}
+button{
+    font-family: 'Anicon Sans';
+    color: black;
+}
+
+/* Fuentes */
+
+.cormorantsc{
+    font-family: 'Cormorant SC', serif;
+    color: #B6661F;
+    font-size: 45px;
+}
+.mistrully{
+    font-family: 'Mistrully' ; 
+    color: #B6661F;
+}
+.anicon{
+    font-family: 'Anicon Sans';
+}
+.cormorant{
+    font-family: 'Cormorant Garamond';
+}
+.playfair{
+    font-family: 'Playfair Display';
+}
+.virtual{
+    font-family: 'Virtual';
+    color: #B6661F;
+    font-size: 70px;
 }
 
 /* Aqui va el css del itinerario */
@@ -325,10 +367,8 @@ form button {
     width: 100%;
     border: none;
     outline: none;
-    color: black;
     border-radius: 5px;
     background-color: #a55b278a;
-    font-family: 'Anicon Sans';
 }
 
 /* Aqui va el css del footer */
