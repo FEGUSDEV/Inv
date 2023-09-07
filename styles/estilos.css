@@ -185,6 +185,7 @@ video{
 .titulos{
     margin-top: 30px;
     font-size: 50px;
+    color: #a85204;
 }
 .textocard{
     text-align: center;
@@ -205,12 +206,12 @@ button{
 
 .cormorantsc{
     font-family: 'Cormorant SC', serif;
-    color: #B6661F;
+    color:#a85204;
     font-size: 45px;
 }
 .mistrully{
     font-family: 'Mistrully' ; 
-    color: #B6661F;
+    color: #a85204;
 }
 .anicon{
     font-family: 'Anicon Sans';
@@ -223,7 +224,7 @@ button{
 }
 .virtual{
     font-family: 'Virtual';
-    color: #B6661F;
+    color: #a85204;
     font-size: 70px;
 }
 
