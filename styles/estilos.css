@@ -56,7 +56,8 @@ header{
     align-items: center;
 }
 video{
-    width: 95%;
+    width:95%;
+    height: 100%;
     border: none;
 }
 
