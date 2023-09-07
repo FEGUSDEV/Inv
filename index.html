@@ -210,6 +210,72 @@
           </button>
         </div>
       </div>
+      <div class="main-containers">
+        <div data-aos="zoom-in" class="cuerpo_formulario">
+          <form action="./controllers/attendance.php" method="post">
+            <div class="input-field">
+              <label>Nombres y apellidos</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Ingrese su nombre completo"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label>Número de celular</label>
+              <input
+                type="number"
+                id="cel"
+                name="cel"
+                placeholder="Ingrese su número de celular"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label>Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ingrese su correo electrónico"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label class="asist-titulo">¿Asistirás?</label>
+              <div class="respuesta">
+                <div class="asist">
+                  <label>Si!</label>
+                  <input
+                    type="radio"
+                    id="sia"
+                    name="selec"
+                    value="Si"
+                    required
+                  />
+                </div>
+                <div class="asist">
+                  <label>No</label>
+                  <input
+                    type="radio"
+                    id="noa"
+                    name="selec"
+                    value="No"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <button class="sumbit" name="enviar">
+                <span class="btnText">Confirmar asistencia</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
       <footer style="background-color: #e6dccc" class="main-containers">
         <img src="https://i.ibb.co/HhLq3NN/footer.png" alt="" />
         <h3>DÉJALES UN MENSAJE A LOS NOVIOS</h3>
