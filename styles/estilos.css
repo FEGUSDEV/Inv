@@ -48,7 +48,11 @@ body{
 
 /* Seccion del header que contiene al video */
 header{
-    height: 100vh;
+    height: 700px;
+    width: 100%;
+    margin: 0;
+}
+video{
     width: 100%;
 }
 
