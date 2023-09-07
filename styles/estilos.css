@@ -233,18 +233,6 @@ button{
 .imgc{
     height: 155px;
 }
-
-.imagen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 230px;
-    width: 230px;
-    background-color: white;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-}
 .llegar{
     display: flex;
     gap: 10px;
