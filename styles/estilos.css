@@ -46,6 +46,13 @@ body{
 
 @media screen and (max-width:767px) {
 
+.container{
+    display: grid;
+    gap: 15px;
+    place-items: center;
+    max-width: 399px;
+}
+
 /* Seccion del header que contiene al video */
 header{
     height: 700px;
