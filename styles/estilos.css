@@ -53,12 +53,11 @@ header{
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
 video{
-    width:95%;
     height: 100%;
-    border: none;
+    width: 100%;
 }
 
 /* Seccion de historia */
