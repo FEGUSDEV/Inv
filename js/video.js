@@ -1,7 +1,8 @@
 const video = document.getElementById("video");
+const play = document.getElementById("play");
 
-
-video.addEventListener("play", function () {
+play.addEventListener("click", function () {
+    
   video.play();
   video.controls=false;
 });
