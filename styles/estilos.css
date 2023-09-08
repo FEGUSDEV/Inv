@@ -26,32 +26,443 @@
     font-weight: normal;
     font-style: normal;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-body{
+
+body {
     background-color: #EDE5D9;
     display: grid;
     place-items: center;
 }
-.container{
+
+.container { 
     display: grid;
     gap: 15px;
     place-items: center;
 }
 
+@media screen and (min-width:991px){
+
+    
+    /* Seccion del header que contiene al video */
+    header {
+        height: 700px;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    video {
+        height: 100%;
+        width: 100%;
+    }
+    
+    /* Seccion de historia */
+    
+    .historia {
+        width: 100%;
+        display: grid;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        gap: 20px;
+        place-items: center;
+        -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+    }
+    
+    .historia-imagenes {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .historia-imagenes #img1 {
+        margin-left: 10px;
+        height: 280px;
+        background: #5cb85c;
+        -moz-border-radius: 0 100px 100px 0;
+        -webkit-border-radius: 0 100px 100px 0;
+        border-radius: 1000px 0px 0px 1000px;
+    }
+    
+    .historia-imagenes #img2 {
+        margin-right: 10px;
+        margin-top: 50px;
+        height: 280px;
+        background: #5cb85c;
+        -moz-border-radius: 0 100px 100px 0;
+        -webkit-border-radius: 0 100px 100px 0;
+        border-radius: 0px 1000px 1000px 0px;
+    }
+    
+    .historia-texto {
+        font-size: 22px;
+        width: 50%;
+        text-align: center;
+        padding: 20px;
+        display: grid;
+        place-items: center;
+        gap: 15px;
+    
+    }
+    
+    /* Seccion del contador */
+    
+    #cuenta {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .simply-section {
+        width: 90px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+    .simply-amount {
+    
+        font-size: 35px;
+        font-weight: 700;
+        display: block;
+    }
+    
+    .simply-word {
+    
+        font-weight: 300;
+        font-size: 25px;
+    }
+    
+    .cuenta-regresiva {
+        background-color: #E6DCCC;
+        width: 95%;
+        height: 250px;
+        display: grid;
+        justify-content: center;
+        place-items: center;
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.59);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.59);
+        box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.59);
+        border-radius: 11px 11px 11px 11px;
+        padding: 20px;
+    }
+    
+    /* Seccion para modificar textos y clases generales */
+    
+    .titulos-principales {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+    
+    .main-containers {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        gap: 30px;
+    }
+    
+    .card {
+        background-color: #E6DCCC;
+        min-height: 420px;
+        width: 50%;
+        display: grid;
+        place-items: center;
+        gap: 10px;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.59);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.59);
+        box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.59);
+        border-radius: 11px 11px 11px 11px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        margin-top: 40px;
+    }
+    
+    .titulos {
+        margin-top: 30px;
+        font-size: 50px;
+        color: #a85204;
+    }
+    
+    .textocard {
+        text-align: center;
+        width: 300px;
+        font-size: 18px;
+    }
+    
+    p {
+        color: #545454;
+        font-family: 'Anicon Sans';
+    }
+    
+    button {
+        font-family: 'Anicon Sans';
+        color: black;
+    }
+    
+    /* Fuentes */
+    
+    .cormorantsc {
+        font-family: 'Cormorant SC', serif;
+        color: #a85204;
+        font-size: 45px;
+    }
+    
+    .mistrully {
+        font-family: 'Mistrully';
+        color: #a85204;
+    }
+    
+    .anicon {
+        font-family: 'Anicon Sans';
+    }
+    
+    .cormorant {
+        font-family: 'Cormorant Garamond';
+    }
+    
+    .playfair {
+        font-family: 'Playfair Display';
+    }
+    
+    .virtual {
+        font-family: 'Virtual';
+        color: #a85204;
+        font-size: 70px;
+    }
+    
+    /* Aqui va el css del itinerario */
+    
+    .imgc {
+        height: 155px;
+    }
+    
+    .llegar {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .llegar img {
+        height: 100%;
+    }
+    .llegar h4:hover{
+        cursor: pointer;
+        color: rgb(0, 0, 169);
+    }
+    
+    /* Aqui el css del dress code */
+    
+    #dress {
+        /* display: flex; */
+        padding-bottom: 70px;
+    }
+    
+    .trajes {
+        display: flex;
+        gap: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .textofin {
+    
+        font-size: 20px;
+    }
+    
+    /* Aqui el css de la galeria */
+    
+    .main-containers h2 {
+        opacity: 0.5;
+    }
+    
+    #busqueda {
+        border-radius: 16px 16px 16px 16px;
+        -moz-border-radius: 16px 16px 16px 16px;
+        -webkit-border-radius: 16px 16px 16px 16px;
+    }
+    
+    .slider {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .elemento {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 0 auto;
+        margin: 0 5px;
+        width: 400px;
+        height: 600px;
+        padding: 10px;
+    }
+    
+    .elemento img {
+        height: 100%;
+    }
+    
+    
+    
+    /* Aqui va el css de la musica */
+    
+    #boton {
+        font-family: 'Anicon Sans';
+        color: black;
+        font-size: 22px;
+        padding: 9px;
+        border: none;
+        text-decoration: none;
+        -webkit-border-radius: 17px;
+        -moz-border-radius: 17px;
+        border-radius: 17px;
+        background-color: #a55b278a;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    
+    /* Aqui va el css del formulario */
+    
+    .cuerpo_formulario {
+    
+        width: 50%;
+        min-height: 300px;
+        margin-top: 70px;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 11px 11px 11px 11px;
+        background-color: #E6DCCC;
+        padding: 15px;
+        padding-bottom: 40px;
+    }
+    
+    .input-field {
+        margin-top: 20px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .input-field input {
+        outline: none;
+        font-size: 15px;
+        font-weight: 400;
+        color: #000000;
+        border-radius: 5px;
+        border: 1px solid #aaa;
+        padding: 0 15px;
+        height: 42px;
+        margin: 8px 0;
+        width: 100%;
+        font-family: 'Cormorant Garmond', cursive;
+    }
+    
+    .input-field label {
+        font-size: 25px;
+        font-weight: 500;
+        color: black;
+        font-family: 'Anicon Sans';
+    }
+    
+    .button {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    form button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        max-width: 200px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #a55b278a;
+    }
+    
+    
+    /* Aqui va el css del footer */
+    
+    footer {
+        width: 100%;
+        margin-top: 100px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    
+    footer .contactos {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer button {
+        height: 34px;
+        width: 130px;
+        display: flex;
+    }
+    footer h2{
+        font-family: 'Cormorant SC';
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    .julio,
+    .maya {
+        display: flex;
+    }
+    .btnText{
+        font-size: 25px;
+    }
+    .respuesta {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 20px;
+    }
+    
+    .asist {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+    }
+    
+    .asist input {
+        height: 20px;
+        width:20px;
+    }
+}
 @media screen and (max-width:767px) {
-
-.container{
-    display: grid;
-    gap: 15px;
-    place-items: center;
-    max-width: 399px;
-}
 
 /* Seccion del header que contiene al video */
 header{
@@ -293,8 +704,8 @@ button{
 
 /* Aqui va el css de la musica */
 
-#boton{
-    font-family: Arial;
+#boton {
+    font-family: 'Anicon Sans';
     color: black;
     font-size: 22px;
     padding: 9px;
@@ -304,6 +715,10 @@ button{
     -moz-border-radius: 17px;
     border-radius: 17px;
     background-color: #a55b278a;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
 /* Aqui va el css del formulario */
 
@@ -377,15 +792,45 @@ footer{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-footer .contactos{
+footer .contactos {
     width: 100%;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
 }
-footer button{
+
+footer button {
     height: 34px;
     width: 130px;
+    display: flex;
+}
+.julio,
+.maya {
+    display: flex;
+}
+.respuesta {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.asist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.asist input {
+    
+    height: 20px;
+    width:20px;
 }
 }
