@@ -1,294 +1,357 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/estilos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./icon/icono.png" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>J&M</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/estilos.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="shortcut icon" href="./icon/icono.png" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <title>J&M</title>
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <video src="./video/video.mp4" controls></video>
-    </header>
-    <div class="historia">
-      <h1 class="cormorantsc">Julio & maya.</h1>
-      <div class="historia-imagenes">
-        <img data-aos="fade-up" id="img1" src="https://i.ibb.co/vHfQQsj/img1.jpg" alt="" />
-        <img data-aos="fade-down" id="img2" src="https://i.ibb.co/kcbC91B/img2.jpg" alt="" />
+  <body>
+    <div class="container">
+      <header>
+        <video src="./video/video.mp4" controls></video>
+      </header>
+      <div class="historia">
+        <h1 class="cormorantsc">Julio & maya.</h1>
+        <div class="historia-imagenes">
+          <img
+            data-aos="fade-up"
+            id="img1"
+            src="https://i.ibb.co/vHfQQsj/img1.jpg"
+            alt=""
+          />
+          <img
+            data-aos="fade-down"
+            id="img2"
+            src="https://i.ibb.co/kcbC91B/img2.jpg"
+            alt=""
+          />
+        </div>
+        <h1 class="mistrully" style="text-shadow: 2px 2px 1px #d1aa84">
+          Nuestra historia
+        </h1>
+        <div class="historia-texto">
+          <p>
+            Nos conocimos hace 6 años en la universidad y jamás pensamos que
+            íbamos a tener una relación, pero si teníamos claro que la voluntad
+            de Dios nos puso el día y la hora para coincidir en nuestras vidas,
+            después de meses conociéndonos supimos que no queríamos separarnos y
+            ahí empezó nuestra historia de amor.
+          </p>
+          <p>
+            5 años después podemos decir que el amor lo puede todo y que
+            nuestras vidas estaban destinadas a estar juntas. ¡Los dos somos
+            uno!
+          </p>
+          <p>
+            Aquí encontrarán todos los detalles de nuestra boda, en Cartagena de
+            Indias, Colombia.
+          </p>
+          <h2 class="mistrully" style="text-shadow: 2px 2px 1px #d1aa84">
+            ¡Los esperamos!
+          </h2>
+          <p>
+            Dios nos unió con un propósito y nos mantendrá unidos por la misma
+            razón.
+          </p>
+        </div>
       </div>
-      <h1 class="mistrully" style="text-shadow: 2px 2px 1px #d1aa84">
-        Nuestra historia
+      <h1 data-aos="fade-up" class="titulos-principales virtual">
+        17 De Noviembre 2023
       </h1>
-      <div class="historia-texto">
-        <p>
-          Nos conocimos hace 6 años en la universidad y jamás pensamos que
-          íbamos a tener una relación, pero si teníamos claro que la voluntad
-          de Dios nos puso el día y la hora para coincidir en nuestras vidas,
-          después de meses conociéndonos supimos que no queríamos separarnos y
-          ahí empezó nuestra historia de amor.
-        </p>
-        <p>
-          5 años después podemos decir que el amor lo puede todo y que
-          nuestras vidas estaban destinadas a estar juntas. ¡Los dos somos
-          uno!
-        </p>
-        <p>
-          Aquí encontrarán todos los detalles de nuestra boda, en Cartagena de
-          Indias, Colombia.
-        </p>
-        <h2 class="mistrully" style="text-shadow: 2px 2px 1px #d1aa84">
-          ¡Los esperamos!
-        </h2>
-        <p>
-          Dios nos unió con un propósito y nos mantendrá unidos por la misma
-          razón.
-        </p>
+      <div data-aos="fade-down" class="cuenta-regresiva anicon">
+        <h1 style="color: #a85204">FALTAN</h1>
+        <div id="cuenta"></div>
       </div>
-    </div>
-    <h1 data-aos="fade-up" class="titulos-principales virtual">
-      17 De Noviembre 2023
-    </h1>
-    <div data-aos="fade-down" class="cuenta-regresiva anicon">
-      <h1 style="color: #a85204">FALTAN</h1>
-      <div id="cuenta"></div>
-    </div>
-    <h1 data-aos="fade-up" class="titulos-principales mistrully" style="font-size: 60px">
-      Itinerario
-    </h1>
-    <div class="main-containers">
-      <div data-aos="fade-down" class="card">
-        <h1 class="titulos anicon">CEREMONIA</h1>
-        <div class="imagen">
-          <img class="imgc" src="https://i.ibb.co/WkDX869/ceremonia.png" alt="" />
-        </div>
-        <h3 class="anicon" style="color: #545454">
-          IGLESIA SANTO TORIBIO DE MOGROVEJO
-        </h3>
-        <h4 class="anicon">Cll. 38 # 6-107, Cll Sargento Mayor San Diego.</h4>
-        <h4 class="anicon">Hora: 17:00</h4>
-        <div class="llegar">
-          <img src="https://i.ibb.co/PZzhMzf/location.png" alt="" />
-          <h4 class="anicon" onclick="window.open('https://goo.gl/maps/PkqKMUpNew4BHR2R6', '_blank')">¿Cómo llegar?</h4>
-
-        </div>
-      </div>
-      <div data-aos="fade-down" class="card">
-        <h1 class="titulos anicon">RECEPCIÓN</h1>
-        <div class="imagen">
-          <img class="imgc" src="https://i.ibb.co/gg9NbtS/recepcion.png" alt="" />
-        </div>
-        <h3 class="anicon" style="color: #545454">MUSEO NAVAL DEL CARIBE</h3>
-        <h4 class="anicon">
-          Cl. 31 #3-26, Centro Histórico, Cartagena de Indias.
-        </h4>
-        <h4 class="anicon">Hora: 19:00</h4>
-        <div class="llegar">
-          <img src="https://i.ibb.co/PZzhMzf/location.png" alt="" />
-          <h4 class="anicon" onclick="window.open('https://goo.gl/maps/xiwyw4U4KuHzdXZq7', '_blank')">¿Cómo llegar?</h4>
-
-        </div>
-      </div>
-    </div>
-    <div id="dress" data-aos="fade-down" class="card">
-      <h1 class="titulos-principales mistrully">Dress Code</h1>
-      <div class="trajes">
-        <div class="mujeres">
-          <img src="https://i.ibb.co/7CLnwxR/mujeres.png" alt="" />
-          <h1 class="mistrully" style="color: black">Mujeres</h1>
-          <h2 class="anicon">Vestido Largo</h2>
-        </div>
-        <div class="hombres">
-          <img src="https://i.ibb.co/dLJ7H8p/hombres.png" alt="" />
-          <h1 class="mistrully" style="color: black">Hombres</h1>
-          <h2 class="anicon">Smoking Tropical</h2>
-        </div>
-      </div>
-
-      <div style="margin-top: 20px" class="textofin">
-        <p><strong>Colores reservados</strong></p>
-        <p>Azul rey, blanco.</p>
-      </div>
-    </div>
-    <div class="main-containers">
-      <h1 data-aos="fade-up" class="titulos-principales virtual">Galeria</h1>
-      <h2 class="anicon">← Deslice →</h2>
-      <div data-aos="zoom-in" class="slider">
-        <div class="elemento">
-          <img src="https://i.ibb.co/H7DCy94/1.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/pZ7X118/2.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/RvxvJKx/3.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/0YWmwTd/4.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/VYhChZF/5.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/L5HGGCt/6.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/Yb9myPC/7.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/9sQSXcB/8.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/4RfvZbp/9.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/1GB9gyh/10.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/HXnmt6x/11.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/FntTDT8/12.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/JRqWwbt/13.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/sR0qRFf/14.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/H2hfhS0/15.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/vYBrgX3/16.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/2h8S8pD/17.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/RvNWsdt/18.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/DKQb6jX/19.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/YyHjLWF/20.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/G3dwtkc/21.jpg" alt="" />
-        </div>
-        <div class="elemento">
-          <img src="https://i.ibb.co/HPTmYB2/22.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="main-containers">
-      <div data-aos="fade-up" class="card">
-        <h1 class="titulos mistrully">Musica</h1>
-        <img src="https://i.ibb.co/Btcp4vp/musica.png" alt="" />
-        <div class="textocard">
-          <p>¡Ayúdanos para que nuestra boda sea inolvidable!</p>
-          <p>
-            Agrega la música que deseas escuchar dando click en el boton ↓
-          </p>
-        </div>
-        <br />
-        <button class="boton" onclick="location.href=''">
-          Playlist Spotify
-        </button>
-      </div>
-    </div>
-    <div class="main-containers">
-      <h1 data-aos="fade-up" class="titulos-principales mistrully">
-        Mesa de regalos
+      <h1
+        data-aos="fade-up"
+        class="titulos-principales mistrully"
+        style="font-size: 60px"
+      >
+        Itinerario
       </h1>
-      <div class="modal-container" id="modal_container">
-        <div class="modal">
-          <h1 class="titulos anicon">Codigo QR</h1>
-          <img class="modalqr" src="https://i.ibb.co/r7skwz6/qr.jpg" alt="" />
-          <button class="boton" id="close">Cerrar</button>
+      <div class="main-containers">
+        <div data-aos="fade-down" class="card">
+          <h1 class="titulos anicon">CEREMONIA</h1>
+          <div class="imagen">
+            <img
+              class="imgc"
+              src="https://i.ibb.co/WkDX869/ceremonia.png"
+              alt=""
+            />
+          </div>
+          <h3 class="anicon" style="color: #545454">
+            IGLESIA SANTO TORIBIO DE MOGROVEJO
+          </h3>
+          <h4 class="anicon">Cll. 38 # 6-107, Cll Sargento Mayor San Diego.</h4>
+          <h4 class="anicon">Hora: 17:00</h4>
+          <div class="llegar">
+            <img src="https://i.ibb.co/PZzhMzf/location.png" alt="" />
+            <h4
+              class="anicon"
+              onclick="window.open('https://goo.gl/maps/PkqKMUpNew4BHR2R6', '_blank')"
+            >
+              ¿Cómo llegar?
+            </h4>
+          </div>
+        </div>
+        <div data-aos="fade-down" class="card">
+          <h1 class="titulos anicon">RECEPCIÓN</h1>
+          <div class="imagen">
+            <img
+              class="imgc"
+              src="https://i.ibb.co/gg9NbtS/recepcion.png"
+              alt=""
+            />
+          </div>
+          <h3 class="anicon" style="color: #545454">MUSEO NAVAL DEL CARIBE</h3>
+          <h4 class="anicon">
+            Cl. 31 #3-26, Centro Histórico, Cartagena de Indias.
+          </h4>
+          <h4 class="anicon">Hora: 19:00</h4>
+          <div class="llegar">
+            <img src="https://i.ibb.co/PZzhMzf/location.png" alt="" />
+            <h4
+              class="anicon"
+              onclick="window.open('https://goo.gl/maps/xiwyw4U4KuHzdXZq7', '_blank')"
+            >
+              ¿Cómo llegar?
+            </h4>
+          </div>
         </div>
       </div>
-      <div data-aos="fade-down" class="card">
-        <img id="mesadere" src="https://i.ibb.co/k5g3h9K/mesa-de-regalos.png" alt="" />
-        <div class="textocard">
-          <p>
-            Queremos que sepas que nuestro principal regalo es tu presencia en
-            este día tan especial.
-          </p>
-          <p>
-            Si aparte de tu presencia deseas darnos un detalle en dinero, da
-            clic en “Hacer Transferencia”.
-          </p>
+      <div id="dress" data-aos="fade-down" class="card">
+        <h1 class="titulos-principales mistrully">Dress Code</h1>
+        <div class="trajes">
+          <div class="mujeres">
+            <img src="https://i.ibb.co/7CLnwxR/mujeres.png" alt="" />
+            <h1 class="mistrully" style="color: black">Mujeres</h1>
+            <h2 class="anicon">Vestido Largo</h2>
+          </div>
+          <div class="hombres">
+            <img src="https://i.ibb.co/dLJ7H8p/hombres.png" alt="" />
+            <h1 class="mistrully" style="color: black">Hombres</h1>
+            <h2 class="anicon">Smoking Tropical</h2>
+          </div>
         </div>
 
-        <button class="boton" id="open">Hacer Transferencia</button>
+        <div style="margin-top: 20px" class="textofin">
+          <p><strong>Colores reservados</strong></p>
+          <p>Azul rey, blanco.</p>
+        </div>
       </div>
-    </div>
+      <div class="main-containers">
+        <h1 data-aos="fade-up" class="titulos-principales virtual">Galeria</h1>
+        <h2 class="anicon">← Deslice →</h2>
+        <div data-aos="zoom-in" class="slider">
+          <div class="elemento">
+            <img src="https://i.ibb.co/H7DCy94/1.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/pZ7X118/2.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/RvxvJKx/3.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/0YWmwTd/4.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/VYhChZF/5.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/L5HGGCt/6.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/Yb9myPC/7.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/9sQSXcB/8.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/4RfvZbp/9.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/1GB9gyh/10.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/HXnmt6x/11.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/FntTDT8/12.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/JRqWwbt/13.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/sR0qRFf/14.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/H2hfhS0/15.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/vYBrgX3/16.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/2h8S8pD/17.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/RvNWsdt/18.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/DKQb6jX/19.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/YyHjLWF/20.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/G3dwtkc/21.jpg" alt="" />
+          </div>
+          <div class="elemento">
+            <img src="https://i.ibb.co/HPTmYB2/22.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main-containers">
+        <div data-aos="fade-up" class="card">
+          <h1 class="titulos mistrully">Musica</h1>
+          <img src="https://i.ibb.co/Btcp4vp/musica.png" alt="" />
+          <div class="textocard">
+            <p>¡Ayúdanos para que nuestra boda sea inolvidable!</p>
+            <p>
+              Agrega la música que deseas escuchar dando click en el boton ↓
+            </p>
+          </div>
+          <br />
+          <button class="boton" onclick="location.href=''">
+            Playlist Spotify
+          </button>
+        </div>
+      </div>
+      <div class="main-containers">
+        <h1 data-aos="fade-up" class="titulos-principales mistrully">
+          Mesa de regalos
+        </h1>
+        <div class="modal-container" id="modal_container">
+          <div class="modal">
+            <h1 class="titulos anicon">Codigo QR</h1>
+            <img class="modalqr" src="https://i.ibb.co/r7skwz6/qr.jpg" alt="" />
+            <button class="boton" id="close">Cerrar</button>
+          </div>
+        </div>
+        <div data-aos="fade-down" class="card">
+          <img
+            id="mesadere"
+            src="https://i.ibb.co/k5g3h9K/mesa-de-regalos.png"
+            alt=""
+          />
+          <div class="textocard">
+            <p>
+              Queremos que sepas que nuestro principal regalo es tu presencia en
+              este día tan especial.
+            </p>
+            <p>
+              Si aparte de tu presencia deseas darnos un detalle en dinero, da
+              clic en “Hacer Transferencia”.
+            </p>
+          </div>
 
-    <div class="main-containers">
-      <h1 class="titulos mistrully" data-aos="fade-up">Asistencia</h1>
-      <div data-aos="zoom-in" class="cuerpo_formulario">
-        <form action="./controllers/attendance.php" method="post">
-          <div class="input-field">
-            <label>Nombres y apellidos</label>
-            <input type="text" id="nom" name="nom" placeholder="Ingrese su nombre completo" required />
-          </div>
-          <div class="input-field">
-            <label>Número de celular</label>
-            <input type="number" id="cel" name="cel" placeholder="Ingrese su número de celular" required />
-          </div>
-          <div class="input-field">
-            <label>Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required />
-          </div>
-          <div class="input-field">
-            <label class="asist-titulo">¿Asistirás?</label>
-            <div class="respuesta">
-              <div class="asist">
-                <label>Si!</label>
-                <input type="radio" id="sia" name="selec" value="Si" required />
-              </div>
-              <div class="asist">
-                <label>No</label>
-                <input type="radio" id="noa" name="selec" value="No" required />
+          <button class="boton" id="open">Hacer Transferencia</button>
+        </div>
+      </div>
+
+      <div class="main-containers">
+        <h1 class="titulos mistrully" data-aos="fade-up">Asistencia</h1>
+        <div data-aos="zoom-in" class="cuerpo_formulario">
+          <form action="./controllers/attendance.php" method="post">
+            <div class="input-field">
+              <label>Nombres y apellidos</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Ingrese su nombre completo"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label>Número de celular</label>
+              <input
+                type="number"
+                id="cel"
+                name="cel"
+                placeholder="Ingrese su número de celular"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label>Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ingrese su correo electrónico"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <label class="asist-titulo">¿Asistirás?</label>
+              <div class="respuesta">
+                <div class="asist">
+                  <label>Si!</label>
+                  <input
+                    type="radio"
+                    id="sia"
+                    name="selec"
+                    value="Si"
+                    required
+                  />
+                </div>
+                <div class="asist">
+                  <label>No</label>
+                  <input
+                    type="radio"
+                    id="noa"
+                    name="selec"
+                    value="No"
+                    required
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="button">
-            <button class="sumbit" name="enviar">
-              <span class="btnText">Confirmar asistencia</span>
-            </button>
-          </div>
-        </form>
+            <div class="button">
+              <button class="sumbit" name="enviar">
+                <span class="btnText">Confirmar asistencia</span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
+      <footer style="background-color: #e6dccc" class="main-containers">
+        <img src="https://i.ibb.co/HhLq3NN/footer.png" alt="" />
+        <h3 class="playfair" id="mensajenov" style="color: #545454">
+          DÉJALES UN MENSAJE A LOS NOVIOS
+        </h3>
+        <div class="contactos">
+          <div class="julio">
+            <img src="https://i.ibb.co/JsGgr31/iconow.png" alt="" />
+            <button class="boton" onclick="location.href=''">JULIO</button>
+          </div>
+          <div class="maya">
+            <img src="https://i.ibb.co/JsGgr31/iconow.png" alt="" />
+            <button class="boton" onclick="location.href=''">MAYA</button>
+          </div>
+        </div>
+        <h2 class="anicon">#JULIO&MAYA</h2>
+        <div class="anicon">
+          <p>&copy; FegusDev</p>
+        </div>
+      </footer>
     </div>
-    <footer style="background-color: #e6dccc" class="main-containers">
-      <img src="https://i.ibb.co/HhLq3NN/footer.png" alt="" />
-      <h3 id="mensajenov" style="color: #545454">
-        DÉJALES UN MENSAJE A LOS NOVIOS
-      </h3>
-      <div class="contactos">
-        <div class="julio">
-          <img src="https://i.ibb.co/JsGgr31/iconow.png" alt="" />
-          <button class="boton" onclick="location.href=''">JULIO</button>
-        </div>
-        <div class="maya">
-          <img src="https://i.ibb.co/JsGgr31/iconow.png" alt="" />
-          <button class="boton" onclick="location.href=''">MAYA</button>
-        </div>
-      </div>
-      <h2 class="anicon">#JULIO&MAYA</h2>
-      <div class="anicon">
-        <p>&copy; FegusDev</p>
-      </div>
-    </footer>
-  </div>
 
   <script src="js/simplyCountdown.min.js"></script>
   <script src="js/countdown.js"></script>

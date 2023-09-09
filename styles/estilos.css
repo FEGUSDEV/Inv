@@ -49,7 +49,7 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width:991px){
+@media screen and (min-width:768px){
 
     
     /* Seccion del header que contiene al video */
