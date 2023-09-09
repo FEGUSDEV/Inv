@@ -213,12 +213,11 @@
           <div class="textocard">
             <p>¡Ayúdanos para que nuestra boda sea inolvidable!</p>
             <p>
-              Agrega la música que deseas escuchar dando click en el en el boton
-              ↓
+              Agrega la música que deseas escuchar dando click en el boton ↓
             </p>
           </div>
           <br />
-          <button id="boton" onclick="location.href=''">
+          <button class="boton" onclick="location.href=''">
             Playlist Spotify
           </button>
         </div>
@@ -227,8 +226,19 @@
         <h1 data-aos="fade-up" class="titulos-principales mistrully">
           Mesa de regalos
         </h1>
+        <div class="modal-container" id="modal_container">
+          <div class="modal">
+            <h1 class="titulos anicon">Codigo QR</h1>
+            <img class="modalqr" src="https://i.ibb.co/r7skwz6/qr.jpg" alt="" />
+            <button class="boton" id="close">Cerrar</button>
+          </div>
+        </div>
         <div data-aos="fade-down" class="card">
-          <img src="https://i.ibb.co/k5g3h9K/mesa-de-regalos.png" alt="" />
+          <img
+            id="mesadere"
+            src="https://i.ibb.co/k5g3h9K/mesa-de-regalos.png"
+            alt=""
+          />
           <div class="textocard">
             <p>
               Queremos que sepas que nuestro principal regalo es tu presencia en
@@ -240,12 +250,12 @@
             </p>
           </div>
 
-          <button id="boton" onclick="location.href=''">
-            Hacer Transferencia
-          </button>
+          <button class="boton" id="open">Hacer Transferencia</button>
         </div>
       </div>
+
       <div class="main-containers">
+        <h1 class="titulos mistrully" data-aos="fade-up">Asistencia</h1>
         <div data-aos="zoom-in" class="cuerpo_formulario">
           <form action="./controllers/attendance.php" method="post">
             <div class="input-field">
@@ -313,15 +323,17 @@
       </div>
       <footer style="background-color: #e6dccc" class="main-containers">
         <img src="https://i.ibb.co/HhLq3NN/footer.png" alt="" />
-        <h3 style="color: #545454">DÉJALES UN MENSAJE A LOS NOVIOS</h3>
+        <h3 id="mensajenov" style="color: #545454">
+          DÉJALES UN MENSAJE A LOS NOVIOS
+        </h3>
         <div class="contactos">
           <div class="julio">
             <img src="https://i.ibb.co/JsGgr31/iconow.png" alt="" />
-            <button id="boton" onclick="location.href=''">JULIO</button>
+            <button class="boton" onclick="location.href=''">JULIO</button>
           </div>
           <div class="maya">
             <img src="https://i.ibb.co/JsGgr31/iconow.png" alt="" />
-            <button id="boton" onclick="location.href=''">MAYA</button>
+            <button class="boton" onclick="location.href=''">MAYA</button>
           </div>
         </div>
         <h2>#JULIO&MAYA</h2>
@@ -330,6 +342,7 @@
 
     <script src="js/simplyCountdown.min.js"></script>
     <script src="js/countdown.js"></script>
+    <script src="js/modal.js"></script>
     <script>
       AOS.init();
     </script>
