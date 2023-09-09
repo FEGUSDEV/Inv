@@ -740,7 +740,8 @@ button{
     align-items: center;
     justify-content: center;
     flex: 1 0 auto;
-    margin: 10px;
+    margin-right: 15px;
+    margin-left: 0;
     width: 100%;
     height: 600px;
     padding: 10px;
