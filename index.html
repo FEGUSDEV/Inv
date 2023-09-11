@@ -8,6 +8,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="shortcut icon" href="./icon/icono.png" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <title>J&M</title>
 </head>
 
@@ -131,9 +132,9 @@
     <div class="main-containers">
       <div class="galeriaTitulo">
         <h1 data-aos="fade-up" class="titulos virtual">Galeria</h1>
-        <img src="https://i.ibb.co/3vx3NWN/camarita.png" alt="">
+        <img src="https://i.ibb.co/3vx3NWN/camarita.png"  data-aos="fade-up" alt="">
       </div>
-      <img class="galeriaImg" src="https://i.ibb.co/YkGCsVM/galeria-Img.png" alt="">
+      <img class="galeriaImg" src="https://i.ibb.co/YkGCsVM/galeria-Img.png" data-aos="fade-up" alt="">
       <h2 class="anicon">← Deslice →</h2>
       <div data-aos="zoom-in" class="slider">
         <div class="elemento">
@@ -211,27 +212,27 @@
         <div class="textocard">
           <p>¡Ayúdanos para que nuestra boda sea inolvidable!</p>
           <p>
-            Agrega la música que deseas escuchar dando click en el boton ↓
+            Agrega la música que deseas escuchar dando clic en el botón ↓
           </p>
         </div>
         <br />
-        <button class="boton" onclick="location.href=''">
+        <button class="boton" onclick="location.href='https://open.spotify.com/playlist/12LEXety90LGBZprZc4mCM?si=Nz5RWxOpQ_KgifWy9cJEqg&pt=1883d7b0b5c128d04a92019cbb9c08da'">
           Playlist Spotify
         </button>
       </div>
     </div>
     <div class="main-containers">
+      <h1 data-aos="fade-up"  class="titulos-principales virtual">
+        Mesa de regalos
+      </h1>
       <div class="modal-container" id="modal_container">
         <div class="modal">
-          <h1 class="titulos anicon">Codigo QR</h1>
+          <h1 class="titulos anicon">Código QR</h1>
           <img class="modalqr" src="https://i.ibb.co/r7skwz6/qr.jpg" alt="" />
           <button class="boton" id="close">Cerrar</button>
         </div>
       </div>
       <div data-aos="fade-down" class="card">
-        <h1 data-aos="fade-up" class="titulos mistrully">
-          Mesa de regalos
-        </h1>
         <img id="mesadere" src="https://i.ibb.co/k5g3h9K/mesa-de-regalos.png" alt="" />
         <div class="textocard">
           <p>
@@ -314,6 +315,7 @@
   <script>
     AOS.init();
   </script>
+  <script src="js/alertas.js"></script>
 </body>
 
 </html>

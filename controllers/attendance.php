@@ -1,6 +1,4 @@
 <?php
-ob_start();
-session_start();
 require '../vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -22,7 +20,6 @@ include("../db/connection.php");
 $con = connect();
 try {
   if (empty($nombre) || empty($celular) || empty($email)) {
-    $_SESSION['alerta'] = 'Hay campos sin llenar';
     header('Location: ../index.html');
     exit;
   } else {
@@ -189,15 +186,14 @@ try {
 
 
       if ($query) {
-        header("Location:" . $_SERVER['HTTP_REFERER']);
+        header("Location:" . $_SERVER['HTTP_REFERER'] . '?alert=saved');
       } else {
-        $_SESSION['alerta'] = 'Error en el ingreso del registro';
+        echo 'Hubo un error en el registro';
         header('Location: ../index.html');
         exit;
       }
     } else {
-      $_SESSION['alerta'] = 'La cedula o el correo ya existen';
-      header('Location: ../index.html');
+      header("Location:" . $_SERVER['HTTP_REFERER'] . '?alert=error');
       exit;
     }
   }
